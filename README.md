@@ -62,14 +62,6 @@
 
   <p>This project incorporates Socket.IO for real-time data extraction, providing a seamless experience for users interacting with the application.</p>
 
-  <h2>Contributing</h2>
-
-  <p>Feel free to contribute to this project by submitting pull requests or raising issues.</p>
-
-  <h2>License</h2>
-
-  <p>This project is licensed under the <a href="LICENSE">MIT License</a>.</p>
-
 </body>
 
 </html>

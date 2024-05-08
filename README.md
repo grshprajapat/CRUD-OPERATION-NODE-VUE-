@@ -29,10 +29,10 @@
   <pre><code>npm run dev</code></pre>
 
   <ol start="3">
-    <li>In the <code>config/config.json</code> file, change the database name:</li>
-  </ol>
+  <li>In the <code>config/config.json</code> file, change the database name:</li>
+</ol>
 
-  <pre><code>{
+<pre><code>{
   "development": {
     "username": "root",
     "password": "root",
@@ -42,7 +42,19 @@
   }
 }</code></pre>
 
-  <p>Replace <code>your_database_name_here</code> with the name of your database.</p>
+<p>Replace <code>your_database_name_here</code> with the name of your database.</p>
+
+<ol start="4">
+  <li>In the <code>index.js</code> file, modify the database configuration:</li>
+</ol>
+
+<pre><code>const sequelize = new Sequelize('your_database_name_here', 'root', 'root', {
+  host: 'localhost',
+  dialect: 'mysql',
+});</code></pre>
+
+<p>Update <code>'databaseName'</code>, <code>'root'</code>, and <code>'root'</code> with your database name, username, and password respectively.</p>
+
 
   <h3>Frontend Setup</h3>
 
